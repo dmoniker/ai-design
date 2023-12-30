@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dad Joke Randomizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .joke-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="joke-container">
+        <h1>Random Dad Joke</h1>
+        <p id="joke"></p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const jokes = [
+                "I'm reading a book on anti-gravity. It's impossible to put down!",
+                "Did you hear about the mathematician who’s afraid of negative numbers? He'll stop at nothing to avoid them.",
+                "Why don't scientists trust atoms? Because they make up everything.",
+                "Why don't eggs tell jokes? Because they might crack up.",
+                "What do you call a fake noodle? An impasta.",
+                "How do you organize a space party? You planet.",
+                "Why don't scientists trust atoms? Because they make up everything.",
+                "What do you call a belt made of watches? A waist of time.",
+                "Why couldn't the bicycle stand up by itself? It was two-tired.",
+                "What did the fish say when it hit the wall? Dam.",
+                "Why do bees have sticky hair? Because they use honeycombs.",
+                "What do you call cheese that isn't yours? Nacho cheese.",
+                "What do you call an alligator in a vest? An investigator.",
+                "Why couldn't the leopard play hide and seek? Because he was always spotted.",
+                "What do you call a boomerang that won't come back? A stick.",
+                "Why don't skeletons fight each other? They don't have the guts.",
+                "What do you call a bear with no teeth? A gummy bear.",
+                "How do you make a tissue dance? Put a little boogie in it.",
+                "Why did the scarecrow win an award? Because he was outstanding in his field.",
+                "What do you call a snowman with a six-pack? An abdominal snowman.",
+                "Why was the math book sad? Because it had too many problems.",
+                "What do you call a dog that can do magic? A labracadabrador.",
+                "Why did the tomato turn red? Because it saw the salad dressing.",
+                "Parallel lines have so much in common. It’s a shame they’ll never meet.",
+                "My wife told me to take the spider out instead of killing it. We went and had some drinks. Cool guy, wants to be a web developer.",
+                "I told my wife she should embrace her mistakes. She gave me a hug.",
+                "I'm reading a book about anti-gravity. It's impossible to put down!",
+                "Did you hear about the mathematician who’s afraid of negative numbers? He’ll stop at nothing to avoid them.",
+                "Why don’t programmers like nature? It has too many bugs.",
+                "I’ve started sleeping in our fireplace. Now I sleep like a log.",
+                "Two antennas met on a roof, fell in love, and got married. The ceremony wasn’t much, but the reception was incredible!",
+                "My friend says to me, 'What rhymes with orange?' I said, 'No, it doesn't.'",
+                "I told my friend 10 jokes to make him laugh. Sadly, no pun in ten did.",
+                "I have a joke about time travel, but you didn't like it.",
+                "A jumper cable walks into a bar. The bartender says, ‘I’ll serve you, but don’t start anything.’",
+                "I have a few jokes about unemployed people, but none of them work.",
+                "I wasn’t originally going to get a brain transplant, but then I changed my mind.",
+                "I'd tell you a chemistry joke, but I know I wouldn't get a reaction.",
+                "Did you hear about the claustrophobic astronaut? He just needed a little space.",
+                "I once got into a fight with a broken elevator. I took it to another level.",
+                "The shovel was a ground-breaking invention.",
+                "A termite walks into a bar and asks, ‘Is the bar tender here?’",
+                "Have you heard about the chocolate record player? It sounds pretty sweet."
+            ];
+
+            function getRandomJoke() {
+                return jokes[Math.floor(Math.random() * jokes.length)];
+            }
+
+            document.getElementById('joke').innerText = getRandomJoke();
+        });
+    </script>
+</body>
+</html>
